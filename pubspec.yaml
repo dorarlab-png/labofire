@@ -1,0 +1,42 @@
+name: my_lab_app
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.11.5 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+      
+  sqflite: ^2.3.0
+  path: ^1.9.0
+  intl: any
+
+  # إنشاء ملفات الـ PDF وطباعة الإيصالات الحرارية
+  pdf: ^3.10.8
+  printing: ^5.11.0
+  image_picker: ^1.1.2
+  cupertino_icons: ^1.0.8
+  file_picker: ^8.0.0
+  path_provider: ^2.1.3
+  share_plus: ^10.1.4
+  flutter_bluetooth_serial_plus: ^0.5.0
+  qr_flutter: ^4.1.0
+  image: ^4.1.7
+  esc_pos_utils_plus: ^2.0.3
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  # إضافة ملف الخط المحلي هنا ليعمل بدون إنترنت
+  assets:
+    - assets/fonts/Amiri-Regular.ttf
